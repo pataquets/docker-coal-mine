@@ -9,7 +9,7 @@ RUN \
   rm -rf /var/lib/apt/lists/*
 
 RUN \
-  pip install coal-mine
+  pip install --no-cache-dir coal-mine
 
 ADD ./files/etc/coal-mine.ini /etc/
 
